@@ -48,11 +48,7 @@ def reduce_mem_usage(df, verbose=True):
 
 import IPython
 
-def display(*dfs, head=True):
-	for df in dfs:
-		IPython.display.display(df.head() if head else df)
-
-
+# Reference: https://www.kaggle.com/girmdshinsei/for-japanese-beginner-with-wrmsse-in-lgbm
 def weight_calc(data,product,lower_date,upper_date):
 
 	# calculate the denominator of RMSSE, and calculate the weight base on sales amount
